@@ -8,12 +8,15 @@ class divicion:
       while i < cantidad_de_personas:
          persona = input("Indique el nombre de un integrante: ")
          monto = float(input("indique cunta plata puso: "))
-         integrante = {persona : monto}
-         self.amigos.append(integrante)
+         #integrante = {persona : monto}
+         #self.amigos.append(integrante)
+         self.amigos[persona]=(monto)
          i = i+1
+      print(self.amigos)
 
 
-
-
-
-
+a = divicion()
+a.poniendo_plata()
+   #def cuanto_cada_uno(self):
+      
+      
